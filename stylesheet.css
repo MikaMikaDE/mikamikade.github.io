@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
+/* -----------------------Body----------------------- */
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.opensans {
+    font-family: "Open Sans", sans-serif;
+}
+
+html {
+    background-color: rgb(0, 15, 3)
+}
+
+body {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    color: white;
+    min-height: 100vh;
+    max-width: 1080px;
+    background-color: rgb(0, 27, 5);
+    margin: 0 auto;
+}
+
+/* -----------------------Table----------------------- */
+
+table,
+th,
+td {
+    color: #0a914d;
+    font-family: 'Open Sans';
+    overflow: hidden;
+    padding: 0px;
+}
+
+th,
+td {
+    border-bottom: 1px solid #000704;
+}
+
+tr:nth-child(even) {/* Stripy background */
+    background-color: rgb(0, 29, 6);
+}
+
+tr:hover {
+    background-color: rgb(0, 41, 27);
+}
+
+th {
+    background-color: #000C1D;
+}
+
+/* -----------------------Text----------------------- */
+
+p {
+    color:#0a914d
+}
+
+h1 {
+    color: #0d5031;
+    font-family: 'UnifrakturCook';
+    font-style: bold;
+    text-align: center;
+    font-size: 50pt;
+    padding: 0;
+}
+
+h2 {
+    color: #006443;
+    font-family: 'Open Sans';
+    font-style: bold;
+    text-align: left;
+    padding: 0px;
+}
+
+h3 {
+    color: #006443;
+    font-family: 'Open Sans';
+    font-style: bold;
+    font-size: 20pt;
+    text-align: center;
+    padding: 0px;
+    margin-top: 5;
+    margin-bottom: 5;
+}
+
+a {
+  color: #005d64;
+}
+
+/* -----------------------Button----------------------- */
+
+.button {
+    background-color: #000C1D;
+    border: none;
+    color: grey;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 19%;
+    transition: 0.3s;
+}
+
+.button:hover {
+    opacity: 1;
+    background-color: #006443;
+}
+
+/* -----------------------Characters----------------------- */
+
+
+#characterContainer {
+    display: flex;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#characeterImageDiv {
+    border:outset;
+    border-radius: 2;
+    border-color: #002213;
+    padding: none;
+    margin: 5px;
+    background-image: url(Characters/Background.png);
+}
+
+#characterTextDiv {
+    margin:20px;
+    text-align:justify;
+    float: left;
+    width: 60%;
+    color: #0a914d;
+    font-family: 'Open Sans';
+    font-style: bold;
+    padding: none;
+}
+
+img{    /* needed to remove gap at bottom */ 
+    display: block;
+}
+
+
+.square { 
+    transition: all .15s ease-in-out; 
+    }
+
+.square:hover {
+    transform: scale(1.04); 
+}
+
+/* -----------------------Menu Bar----------------------- */
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #000C1D;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Open Sans';
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #006443;
+    color: white;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #006443;
+    color: white;
+  }
