@@ -133,7 +133,7 @@ a {
     border-color: #002213;
     padding: none;
     margin: 5px;
-    background-image: url(Characters/Background.png);
+    background-image: url("Characters/Background.png");
 }
 
 #characterTextDiv {
