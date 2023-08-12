@@ -9,15 +9,20 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
 <body>
-  
-  Edison Rulings
-  <input id="searchBar" type="text" placeholder="Search..">
-  <button onclick="searchBar()">asd</button>
-  <script src="rulings.js"></script>
-  
-  <h2 id="cardName"></h2><hr>
-  <p  id="psct"></p><hr>
-  <p  id="rulings"></p>
+  <h1>Edison Rulings</h1>
+  <input id="searchBar" type="text" placeholder="Search.." />
+  <button onclick="search()">Search!</button>
 
+  <div style="max-width: 500px">
+    <h2 id="cardName"></h2>
+    <p id="stats"></p>
+    <hr />
+    <p id="psct"></p>
+    <hr />
+    <p id="rulings"></p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="rulings.js"></script>
 </body>
 </html>
