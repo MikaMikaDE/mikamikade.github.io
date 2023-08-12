@@ -1,0 +1,11 @@
+:root {
+    --white: #e9e9ed;
+  }
+body{ 
+    background-color: rgb(40,43,48); 
+    font-family: 'Whitney', sans-serif;
+    font-size: large;
+    padding: none;
+    margin: none;
+    color: rgb(233, 233, 233);
+}
