@@ -1,0 +1,74 @@
+:root{
+
+--d1: #1e2124;
+--d2: #282b30;
+--d3: #36393e;
+--d4: #424549;
+
+}
+
+body{
+background-color: var(--d2);
+margin: 0;
+padding: 0;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(154, 241, 198);
+    text-align: center;
+}
+
+/* -------------------------------------- */
+
+#titleLine{
+    box-shadow: 0px 10px 0px 1px rgba(0,0,0, 0.3);
+    background-color: var(--d2);
+}
+#titleLine hr{
+    color: var(--d4);
+}
+
+/* -------------------------------------- */
+
+#deckBuilder{
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    padding: 25px;
+}
+
+/* -------------------------------------- */
+
+    #deckList{
+        display: inline-grid;
+        grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    }
+
+    .card{
+        width: 99%;
+        margin-bottom: -4px;
+    }
+
+    .card img{
+        width:100%;
+    }
+    .card img:hover{
+        transform: scale(1.1, 1.1);
+        cursor: pointer;
+        box-shadow: 0px 0px 5px 5px rgb(0,0,0, 0.5);
+    }
+
+
+    /* -------------------------------------- */
+
+    #cardFinder{
+        display: inline;
+        width: 40%;
+        margin: 25px;
+    }
+
+    /* -------------------------------------- */
+
+    #previewCard{
+
+    }
