@@ -10,7 +10,7 @@ var replacement_ID_HTML  = null;
 function chooseCard(ID){
     selectedCard_ID_HTML = ID;
     console.log("ID:" + selectedCard_ID_HTML);
-    document.getElementById('previewCard-Image').src = "./img/cards"+ID
+    document.getElementById('previewCard-Image').src = "../Allcards"+ID
 }
 
 
@@ -38,5 +38,5 @@ function replaceCard(replacement){
     })
     .catch(error => console.error('Error fetching JSON data:', error));
 
-    document.getElementById("img-"+selectedCard_ID_HTML).src = "./img/cards/"+replacement;
+    document.getElementById("img-"+selectedCard_ID_HTML).src = "..Allcards/"+replacement;
 }
