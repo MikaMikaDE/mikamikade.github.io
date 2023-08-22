@@ -19,9 +19,10 @@ function search(format) {
       //fuzzy search
       var fuse = new Fuse(data, {
         keys: ['CardName'],
-        threshold: 0.4,
+        threshold: 0.1,
       });
       var filteredData = fuse.search(userInput);
+
 
       //apply format modifier - that's this functions's variable
       let PSCT = "PSCT_" + format;
