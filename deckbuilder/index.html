@@ -23,7 +23,19 @@
 
     <div id="cardFinder">
         <input type="text" id="textInput" label="textInput">
-        <script>document.getElementById("textInput").addEventListener("keyup", replaceCard());</script>
+        <script>document.getElementById("textInput").addEventListener("keydown", searchCard());</script>
+
+        <div id="cardFinder-Info">
+          <h3 id="cardFinder-Title">Title</h3>
+          <hr>
+          <p id="cardFinder-ATK"  class="cardFinder-Stat">ATK: </p>
+          <p id="cardFinder-DEF"  class="cardFinder-Stat">DEF: </p>
+          <p id="cardFinder-LVL"  class="cardFinder-Stat">LVL: </p>
+          <p id="cardFinder-Type" class="cardFinder-Stat">Type:</p>
+          <p id="cardFinder-Attr" class="cardFinder-Stat">Attribute:</p>
+          <hr>
+          <p id="cardFinder-Desc">Text</p>
+        </div>
     </div>
 
     <div id="previewCard">

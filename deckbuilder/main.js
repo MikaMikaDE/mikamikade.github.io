@@ -1,7 +1,7 @@
 var deckArray = [];
 var selectedCard_ID_HTML = null;
 var replacement_ID_HTML  = null;
-
+var NewCard = null;
 
 
 
@@ -10,11 +10,11 @@ var replacement_ID_HTML  = null;
 function chooseCard(ID){
     selectedCard_ID_HTML = ID;
     console.log("ID:" + selectedCard_ID_HTML);
-    document.getElementById('previewCard-Image').src = "../Allcards"+ID
+    document.getElementById('previewCard-Image').src = "../Allcards/"+ID
 }
 
 
-function replaceCard(replacement){
+function searchCard(){
     
     const targetName = document.getElementById("textInput").value;
 
@@ -31,12 +31,11 @@ function replaceCard(replacement){
 
         // Output the result (if found)
         if (cardType) {
-        console.log(`Card Type for ${targetName}: ${cardType}`);
+            console.log(`Card found: ${targetName}, ${cardType}`);
+            document.getElementById('previewCard-Image').src = "../Allcards/"+`${targetName}`;
         } else {
-        console.log('Item not found in JSON data.');
+            console.log('Item not found in JSON data.');
         }
     })
     .catch(error => console.error('Error fetching JSON data:', error));
-
-    document.getElementById("img-"+selectedCard_ID_HTML).src = "..Allcards/"+replacement;
 }
