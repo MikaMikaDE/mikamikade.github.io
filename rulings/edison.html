@@ -10,12 +10,18 @@
 
 <body>
   <h1>Edison Rulings</h1>
+  <hr>
 
+  <div id="data_input">
+    <input id="searchBar" type="text" placeholder="Search.." />
+    <button onclick="search(Edison)">Search!</button>
+  </div>
 
-  <input id="searchBar" type="text" placeholder="Search.." />
-  <button onclick="search(edison)">Search!</button>
+  <div id="data_img">
+    <img id="cardImage" src="../allCards/1st Movement Solo.jpg">
+  </div>
 
-  <div style="max-width: 500px">
+  <div id="data_text">
     <h2 id="cardName"></h2>
     <p id="stats"></p>
     <hr />
@@ -24,6 +30,7 @@
     <p id="rulings"></p>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="rulings.js"></script>
 </body>
